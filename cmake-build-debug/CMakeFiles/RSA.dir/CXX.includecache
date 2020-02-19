@@ -15,4 +15,8 @@ stdlib.h
 -
 time.h
 -
+cmath
+-
+gmpxx.h
+-
 

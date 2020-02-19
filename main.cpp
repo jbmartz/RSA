@@ -3,27 +3,30 @@
 #include <stdlib.h>
 #include <time.h>
 #include <cmath>
-#include <gmp.h>
+#include <gmpxx.h>
+#include <random>
 
-int gcd(int a, int b)
-{
+#define KEY_SIZE 2048
+std::random_device rd;
+
+mpz_class gcd_mpz(mpz_class &a, mpz_class &b) {
     if (a == 0)
         return b;
     return gcd(b % a, a);
 }
 
-int calc_inverse(int mod, int num) {
+void calc_inverse(mpz_class &inverse, mpz_class &mod, mpz_class &num) {
     num %= mod;
 
-    int t = 0;
-    int newt = 1;
-    int r = mod;
-    int newr = num;
-    int quo;
+    mpz_class t = 0;
+    mpz_class newt = 1;
+    mpz_class r = mod;
+    mpz_class newr = num;
+    mpz_class quo;
 
     while (newr != 0) {
         quo = r / newr;
-        int temp = newr;
+        mpz_class temp = newr;
         newr = r - quo * newr;
         r = temp;
         temp = newt;
@@ -33,17 +36,19 @@ int calc_inverse(int mod, int num) {
 
     if (r > 1) {
         std::cout << "Not invertible\n";
-        return -1;
+        inverse = -1;
+        return;
     }
     if (t < 0) {
         t += mod;
     }
 
-    return t;
+    inverse = t;
 }
-int modular_exponentiation(int b, int exp, int mod)
+
+mpz_class modular_exponentiation_mpz(mpz_class &b, mpz_class exp, mpz_class &mod)
 {
-    int res = 1;
+    mpz_class res = 1;
     while (exp > 0)
     {
         if (exp % 2 == 1)
@@ -53,159 +58,142 @@ int modular_exponentiation(int b, int exp, int mod)
     }
     return res;
 }
-int choose_e(int n, int phi_n) {
-    int e;
-
+void choose_e(mpz_class &e, mpz_class &n, mpz_class &phi_n) {
+    gmp_randclass r(gmp_randinit_mt);
+    r.seed(rd());
     do {
-        e = phi_n + rand() % ( n + 1 ) - phi_n;
+        //change to less than phi_n
+      //  e = r.get_z_bits(1024);
+
+        e = r.get_z_range(phi_n);
     }
-    while(gcd(phi_n, e) != 1);
-    return e;
+    while(gcd_mpz(phi_n, e) != 1);
 }
 
-int totient(int p, int q)
+void totient(mpz_class &phi_n, mpz_class &p, mpz_class &q)
 {
-   return (p - 1) * (q - 1);
+    phi_n = (p - 1) * (q - 1);
 }
 
 
 
-bool is_prime(int n, int repeat) {
+bool is_prime(mpz_class &n, int repeat) {
 
-    int a;
-    for(int i = 1; i <= repeat; i++) {
-        while((a =  2 + rand() % (( n + 1 ) - 2)) % 2 == 0);
-        if(gcd(n, a) != 1)
+    gmp_randclass r(gmp_randinit_mt);
+
+
+
+    mpz_class a, gcd, one, exponent;
+
+    gmp_randstate_t rand_state;
+
+
+    for (int i = 1; i <= repeat; i++) {
+
+       a = r.get_z_range(n - 2);
+
+
+
+        if(gcd_mpz(n, a) == 1)
+            return false;
+
+        if(modular_exponentiation_mpz(a, n - 1, n) == 1)
             return false;
 
 
-//        if((a^(n - 1) % n) == 1)
-//            return false;
+    }
+    return true;
 
-        int exponent = pow(a, n - 1);
-        if(exponent % n == 1)
+}
+
+bool pre_filter_is_prime(mpz_class &val) {
+    for(int i = 2; i < 100; i++) {
+        if((val % i) == 0) {
             return false;
+        }
     }
 
     return true;
 }
-std::pair<int, int> choose_primes() {
-    std::pair<int, int> pq;
 
-    int max = 200, min = 3;
+//if x is congruent to 0, 2, 3, or 4 mod 6 not prime
 
-        do {
-            while ((pq.first = (rand() % ((max - min) + 1) + min)) % 2 ==
-                   0);       // std::cout << pq.first << std::endl;
-        } while (!is_prime(pq.first, 100));
-
-        do {
-            while ((pq.second = (rand() % ((max - min) + 1) + min)) % 2 == 0);
-        } while (!is_prime(pq.second, 100));
+void choose_prime_mpz(mpz_class &val) {
+    gmp_randclass r(gmp_randinit_mt);
+    r.seed(rd());
 
 
-    return pq;
-
-}
-
-int encrypt(std::pair<int, int> pub_key, int plaintext) {
-    return modular_exponentiation(plaintext, pub_key.first, pub_key.second);
-
-}
-
-int decrypt(std::pair<int, int> priv_key, int ciphertext) {
-    return modular_exponentiation(ciphertext, priv_key.first, priv_key.second);
-}
-
-std::string convert_to_base26(std::string str) {
-
-    std::string new_str;
-    for (int i = 0; i < str.length() - 2; i += 2) {
-        int sum = 0;
-        int k = 2;
-
-        for (int j = i; j < i + 3; j++) {
-            int n = (((int) str[j] - 'a') * pow(26, k));
-
-            sum += n;
-            --k;
-        }
+    do {
+        val = r.get_z_bits(KEY_SIZE);
+    } //while(!pre_filter_is_prime(val) && !is_prime(val, 100000));
 
 
-
-
-        new_str.push_back((sum % 26) + 'a');
-    }
-    std::cout << new_str << std::endl;
-
-
-    return new_str;
+    while (mpz_probab_prime_p(val.get_mpz_t(), 100) == 0);
 
 
 }
 
-std::string convert_from_base26(std::string str) {
 
-    std::string new_str;
-    int a, b, c;
-    for(int i = 0; i < str.length(); i++) {
-        int k = (int) str[i] / 26;
+mpz_class encrypt(std::pair<mpz_class, mpz_class> &pub_key, mpz_class &plaintext) {
+    return modular_exponentiation_mpz(plaintext, pub_key.first, pub_key.second);
 
-    }
-
-    return "";
 }
 
+mpz_class decrypt(std::pair<mpz_class, mpz_class> &priv_key, mpz_class &ciphertext) {
+    return modular_exponentiation_mpz(ciphertext, priv_key.first, priv_key.second);
+}
 
 
 int main() {
 
-    std::srand(std::time(nullptr));
-    std::pair<int, int> pq = choose_primes();
-    int n = pq.first * pq.second;
-    int phi_n = totient(pq.first, pq.second);
-    int e = choose_e(n, phi_n);
-    int d = calc_inverse(phi_n, e);
+    mpz_class p_val, q_val, n_val, e_val, d_val, phi_n;
+    choose_prime_mpz(p_val);
+    choose_prime_mpz(q_val);
+    n_val = p_val * q_val;
+    totient(phi_n, p_val, q_val);
+    choose_e(e_val, n_val, phi_n);
+    calc_inverse(d_val, phi_n, e_val);
 
-    std::pair<int, int> pub_key(e, n);
-    std::pair<int, int> priv_key(d, n);
+    std::cout << "p: " << p_val.get_str() << std::endl << std::endl;
+    std::cout << "q: " << q_val.get_str() << std::endl << std::endl;
+    std::cout << "n: " << n_val.get_str() << std::endl << std::endl;
+    std::cout << "e: " << e_val.get_str() << std::endl << std::endl;
+    std::cout << "d: " << d_val.get_str() << std::endl << std::endl;
 
-    std::cout << "\np: " << pq.first << "\nq: " << pq.second << std::endl;
-    std::cout << "e: " << e << std::endl;
-    std::cout << "d: " << d << std::endl;
-    std::cout << "n: " << n << std::endl;
-    std::cout << "phi_n: " << phi_n << std::endl;
-    std::string m = "this message is to be encrypted";
 
-  //std::string bet = "bet";
 
-    m = convert_to_base26(m);
 
-    std::cout << "encrypted text: ";
+    std::pair<mpz_class, mpz_class> pub_key(e_val, n_val);
+    std::pair<mpz_class, mpz_class> priv_key(d_val, n_val);
+
+
+    std::string m = "Massive numbers RSA!";
+    std::cout << "Encrypted text: ";
     std::string ciphertext = "";
-    int cipher[m.size()];
+    mpz_class cipher[m.size()];
     for(int i = 0; i < m.size(); i++) {
-        int a = encrypt(pub_key, (int) m[i]);
+        mpz_class convert = (int) m[i];
+        mpz_class a = encrypt(pub_key, convert);
         cipher[i] = a;
 
-       std::cout << (char)((a % 26) + 'a');
+
+        a = a % 26;
+        std::cout << (char) (a.get_ui() + 'a');
+
 
     }
-    std::cout << "\ndecrypted text: ";
+
+
+    std::cout << "\nEncrypted text: ";
 
     for(int i = 0; i < m.size(); i++) {
-        int b = decrypt(priv_key, cipher[i]);
-        std::cout << (char) b;
+        mpz_class b = decrypt(priv_key, cipher[i]);
+        std::cout << (char) b.get_ui();
+
 
     }
 
-
     std::cout << std::endl;
-
-  // std::cout << (int) ((799 / pow(26, 2)) / 26);
- // convert_from_base26(4750);
-
-
 
     return 0;
 }
