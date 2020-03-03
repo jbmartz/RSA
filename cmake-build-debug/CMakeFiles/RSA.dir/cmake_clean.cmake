@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/RSA.dir/main.cpp.o"
+  "CMakeFiles/RSA.dir/RSA.cpp.o"
   "RSA.pdb"
   "RSA"
 )

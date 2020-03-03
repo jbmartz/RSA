@@ -123,32 +123,32 @@ RSA/fast:
 	$(MAKE) -f CMakeFiles/RSA.dir/build.make CMakeFiles/RSA.dir/build
 .PHONY : RSA/fast
 
-main.o: main.cpp.o
+RSA.o: RSA.cpp.o
 
-.PHONY : main.o
+.PHONY : RSA.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/RSA.dir/build.make CMakeFiles/RSA.dir/main.cpp.o
-.PHONY : main.cpp.o
+RSA.cpp.o:
+	$(MAKE) -f CMakeFiles/RSA.dir/build.make CMakeFiles/RSA.dir/RSA.cpp.o
+.PHONY : RSA.cpp.o
 
-main.i: main.cpp.i
+RSA.i: RSA.cpp.i
 
-.PHONY : main.i
+.PHONY : RSA.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/RSA.dir/build.make CMakeFiles/RSA.dir/main.cpp.i
-.PHONY : main.cpp.i
+RSA.cpp.i:
+	$(MAKE) -f CMakeFiles/RSA.dir/build.make CMakeFiles/RSA.dir/RSA.cpp.i
+.PHONY : RSA.cpp.i
 
-main.s: main.cpp.s
+RSA.s: RSA.cpp.s
 
-.PHONY : main.s
+.PHONY : RSA.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/RSA.dir/build.make CMakeFiles/RSA.dir/main.cpp.s
-.PHONY : main.cpp.s
+RSA.cpp.s:
+	$(MAKE) -f CMakeFiles/RSA.dir/build.make CMakeFiles/RSA.dir/RSA.cpp.s
+.PHONY : RSA.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... RSA"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... RSA.o"
+	@echo "... RSA.i"
+	@echo "... RSA.s"
 .PHONY : help
 
 

@@ -1,2 +1,2 @@
 RSA:
-	g++ -g main.cpp -o RSA -lgmpxx -lgmp
+	g++ -g RSA.cpp -o RSA -lgmpxx -lgmp

@@ -15,10 +15,26 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RSA" beforeDir="false" afterPath="$PROJECT_DIR$/RSA" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RSA.dir/main.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RSA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RSA.dSYM/Contents/Resources/DWARF/RSA" beforeDir="false" afterPath="$PROJECT_DIR$/RSA.dSYM/Contents/Resources/DWARF/RSA" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/count.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RSA.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RSA.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RSA.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RSA.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RSA.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RSA.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RSA.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RSA.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RSA.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RSA.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RSA.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RSA.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RSA.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RSA.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RSA.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RSA.dir/link.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/RSA" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/RSA" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/RSA.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/RSA.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/RSA.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,83 +49,116 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/RSA.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="1141">
+              <caret line="250" column="11" lean-forward="true" selection-start-line="250" selection-start-column="11" selection-end-line="250" selection-end-column="11" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file:///usr/local/include/gmp.h">
+        <entry file="file://$PROJECT_DIR$/cmake-build-debug/text">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="855">
-              <caret line="1102" selection-start-line="1102" selection-end-line="1102" />
+            <state relative-caret-position="255">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../.ssh/known_hosts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/cmake-build-debug/RSA.cbp">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Makefile">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
-              <caret line="1" column="40" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
+              <caret line="1" column="38" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/main.cpp">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/iterator">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="127" column="8" selection-start-line="127" selection-start-column="8" selection-end-line="127" selection-end-column="8" />
+            <state relative-caret-position="10395">
+              <caret line="693" selection-start-line="693" selection-end-line="693" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FindGMP.cmake">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1350">
+              <caret line="90" column="9" selection-start-line="90" selection-end-line="90" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file:///usr/local/include/gmpxx.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22905">
+              <caret line="1527" column="45" selection-start-line="1527" selection-start-column="45" selection-end-line="1527" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/string">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="48555">
+              <caret line="3237" selection-start-line="3237" selection-end-line="3237" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cmake-build-debug/Makefile">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>cal</find>
-      <find>exte</find>
-      <find>long</find>
-      <find>^</find>
-      <find>choose_pr</find>
-      <find>pow</find>
-      <find>inits</find>
-      <find>choose_prime</find>
-      <find>mult</find>
-      <find>mul</find>
-      <find>g</find>
-      <find>mod</find>
-      <find>modular</find>
-      <find>choos</find>
-      <find>inverse</find>
-      <find>choose</find>
-      <find>choose_e</find>
-      <find>choose_</find>
-      <find>mpz</find>
-      <find>is_prime</find>
-      <find>rand</find>
-      <find>is_pr</find>
-      <find>randclass</find>
-      <find>seed</find>
-      <find>rd</find>
-      <find>*</find>
-      <find>1024</find>
-      <find>KEY</find>
+      <find>Plainte</find>
+      <find>lorem</find>
+      <find>gen_</find>
+      <find>nb</find>
+      <find>split_bl</find>
+      <find>split_b</find>
+      <find>plainte</find>
+      <find>Plaintext:</find>
+      <find>writ</find>
+      <find>encrypt_</find>
+      <find>encry</find>
+      <find>_</find>
+      <find>62914</find>
+      <find>free</find>
+      <find>decrypt_f</find>
+      <find>.data()</find>
+      <find>import</find>
+      <find>tmp</find>
+      <find>6291402164784686383413895861129692959761999421237408498634935132629067638666288294641925635495754519340328189210006018985899256308530924767624023592409029290971683007860119985849906463663939556250059272363998518011441621633043509560084791626808051486397725227035976157453008496846713818801884570859775558852948521188426902961612631320839716698736907312051478299425764038825359677219137193947739974274306587386425177600125498054757936590811280353801241595870417874131840195640875875074457976321099693537433725490486463646270981260056740616906200979936744881940233782616760352234180980775833668726563267373495963449690925146538274130767436068542586037014291257219079961776415824716447522116055047974747916247781429878784062739188929572482250991213671359557633279782639015892140097205747729642682122755677170098245448365075965906544684007450029463975087102550966528594436254346394144702938641971481472935538639249285207932363633384018602181492140489541529627202425252444451651522971289127330002948095814663497710792164345738791038715971611354297930858446002338610058910938509224594307438378701373324389355671963915527917111773177613627161964746183018337390266482639313964478688554894256643363801611774826599826301530086118580186272161619044429730386202479322085354089093869643201033570389670376253903310284532219264982040920556485459868842341198086107610054876384668272122404046691798416855782252410052342004669259189892343869850983063749340284351024114117273105890696553252575202027773873528455746032220771637335110415918817450556538416095419006810761914811174338626873336744796451884083201791091605319022343677906474212757901525124195858685534806771363141765941603331786584447262053981856611718934114387254420853160215068848331276576692160614872145927455066641564494166151904741290685979640303306279602882890549615755282438425823819597120375699797421483714571017282987658312381551703103546932666884528224473556677936128170457322970623312654054247351745084565201283592636927509212746186745597143299747966177088659166345234190278896444206977125712764010070204970472845465123335802588755275547292448605479541500505729876404341964586206682852063612697147742541720301289214757213589903051221816637148084244153098632881162116659403704167415294749189917034849493497960530723197474539145961532203260357269126454368859342098597871246494265632943952099178585357446483997460272346346439834025688097071028152758337859087146031111957119912187645861227830772855560208160930542968047576869932151018460747903446974543385429210468112575036244290890631844960665919896196089073926084998768878995565733367655310939335415895695574063986169278282798616440386591919398770028773500833543782624657945756505541919493365106017489196376970603699850625949036902934672502225281304151534042508451010466532588321821740555640885615622728841862713766107781047574134264313157320984270433157052290463778794242805522069566635581962409553084279908207669566797294477220925840996916045468462466229581688839112919300112121978961750344136290435708370361087157226596282436268480385901013656320463108452025993222226841042979910274646394641942593178647294663775759047290351389456786776274772793662226384645724956925927848822204867158477951060791713537994594377180080218132054103765897497969724889970160542402849360216915824722448823794393570121109687632343573121514823726880223656162995184076219098517283001551618415239546780228289129244422237434000730259907677920715537358198607871964674489146213535075344305744440765404680919119123029762211675723970584531972912775977878318572368826706622876506470575917058120850829429716858173909991929832347146010938960867991999859704926383576988505271214713066750226259179360383522591871580255338376482494317169391481426659212620623047359880576371076622089555279343622205511467722153207427861162039871415694636692487607425883493047413102688012482001493689643098438202056646805503364779798095140933092555927466943469166391498896670369088479945219956975604542000077879559828457860011683910948408796538943477454893244473627991869920446751186044063610497155697287537909684487380145632381804960438633540147890</find>
+      <find>crea</find>
+      <find>encr</find>
+      <find>diam</find>
+      <find>malloc</find>
+      <find>read_f</find>
+      <find>c_s</find>
+      <find>n_bl</find>
+      <find>n_blocks =</find>
+      <find>encrypt_b</find>
+      <find>solov</find>
+      <find>write_</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -119,16 +168,24 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/makefile" />
-        <option value="$PROJECT_DIR$/Makefile" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/cmake-build-debug/private_keya.txt" />
+        <option value="$PROJECT_DIR$/cmake-build-debug/public_k.txt" />
+        <option value="$PROJECT_DIR$/FindGMP.cmake" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/cmake-build-debug/test.txt" />
+        <option value="$PROJECT_DIR$/cmake-build-debug/text_encrypted" />
+        <option value="$PROJECT_DIR$/Makefile" />
+        <option value="$PROJECT_DIR$/cmake-build-debug/text" />
+        <option value="$PROJECT_DIR$/RSA.cpp" />
       </list>
     </option>
   </component>
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="42" />
+    <option name="x" value="100" />
     <option name="y" value="23" />
-    <option name="width" value="1876" />
+    <option name="width" value="1920" />
     <option name="height" value="1027" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -144,6 +201,11 @@
             <path>
               <item name="RSA" type="b2602c69:ProjectViewProjectNode" />
               <item name="RSA" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RSA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RSA" type="462c0819:PsiDirectoryNode" />
+              <item name="cmake-build-debug" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="RSA" type="b2602c69:ProjectViewProjectNode" />
@@ -165,6 +227,13 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="CPPToolchains" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cmake-build-debug" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -201,33 +270,45 @@
       <workItem from="1581812920538" duration="14031000" />
       <workItem from="1581901212818" duration="19605000" />
       <workItem from="1581959647286" duration="3276000" />
-      <workItem from="1581971090000" duration="19074000" />
+      <workItem from="1581971090000" duration="25406000" />
+      <workItem from="1582132852786" duration="10518000" />
+      <workItem from="1582181055231" duration="6559000" />
+      <workItem from="1582238462436" duration="3452000" />
+      <workItem from="1582247700032" duration="1371000" />
+      <workItem from="1582256433931" duration="2000000" />
+      <workItem from="1582362968404" duration="922000" />
+      <workItem from="1582563491656" duration="8808000" />
+      <workItem from="1582664752819" duration="24704000" />
+      <workItem from="1582833921828" duration="14857000" />
+      <workItem from="1582922443319" duration="9550000" />
+      <workItem from="1582933292426" duration="6197000" />
+      <workItem from="1583183389250" duration="36029000" />
+      <workItem from="1583263711319" duration="2576000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61977000" />
+    <option name="totallyTimeSpent" value="195852000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23321123" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26617828" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2053476" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4064171" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="5" weight="0.2611399" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.3721925" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.2342246" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="CMake" order="11" weight="0.32834226" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32941177" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32941177" />
+      <window_info anchor="bottom" id="CMake" order="11" weight="0.53782386" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3262032" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -260,17 +341,24 @@
     <option name="version" value="1" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/main.cpp</url>
-          <line>97</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="CMakeRunConfiguration">
+        <watch expression="Signal" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/public_key.txt" />
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/private_keya.txt" />
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/private_key.txt" />
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/public_keay.txt" />
+    <entry file="file:///usr/local/include/gmp.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16530">
+          <caret line="1102" selection-start-line="1102" selection-end-line="1102" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../.ssh/known_hosts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -278,31 +366,123 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/include/gmp.h">
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/malloc/_malloc.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="1102" selection-start-line="1102" selection-end-line="1102" />
+        <state relative-caret-position="285">
+          <caret line="19" column="2" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/private_k.txt" />
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/functional">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="1959" column="32" selection-start-line="1959" selection-start-column="32" selection-end-line="1959" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/public_k.txt" />
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/file_public_key.txt" />
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/file_private_key.txt" />
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/filetest_public_key.txt" />
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/key_public_key.txt" />
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/key_private_key.txt" />
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/filetest_private_key.txt" />
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="56" column="41" selection-start-line="56" selection-start-column="41" selection-end-line="56" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/tester_private_key.txt" />
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/tester_public_key.txt_encrypted.txt" />
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/tester_public_key.txt" />
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/__string">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="216" selection-start-line="216" selection-end-line="216" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/kay.txt_public_key.txt" />
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/test.txt_encrypted.txt" />
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/kay.txt_private_key.txt" />
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/tester_public_key.txt_public_key.txt" />
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/tester_public_key.txt_private_key.txt" />
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/test.txt" />
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-793" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/key_private_key" />
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/key_public_key" />
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/text_encrypted" />
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/my_key.private_key">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/my_key.public_key">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Makefile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="1" column="40" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
+          <caret line="1" column="38" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/iterator">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="10395">
+          <caret line="693" selection-start-line="693" selection-end-line="693" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
+    <entry file="file://$PROJECT_DIR$/FindGMP.cmake">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="127" column="8" selection-start-line="127" selection-start-column="8" selection-end-line="127" selection-end-column="8" />
+        <state relative-caret-position="1350">
+          <caret line="90" column="9" selection-start-line="90" selection-end-line="90" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/include/gmpxx.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22905">
+          <caret line="1527" column="45" selection-start-line="1527" selection-start-column="45" selection-end-line="1527" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/string">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48555">
+          <caret line="3237" selection-start-line="3237" selection-end-line="3237" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/Makefile">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/text.encrypted">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/RSA.cbp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/text">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RSA.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1141">
+          <caret line="250" column="11" lean-forward="true" selection-start-line="250" selection-start-column="11" selection-end-line="250" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
